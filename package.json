@@ -1,0 +1,26 @@
+{
+  "name": "Practice",
+  "version": "1.0.0",
+  "description": "Практические задания",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IuriePostolachi/Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IuriePostolachi/Practice/issues"
+  },
+  "homepage": "https://github.com/IuriePostolachi/Practice#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "dependencies": {}
+}
