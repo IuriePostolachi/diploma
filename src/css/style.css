@@ -596,6 +596,7 @@ body {
 
 img {
   max-width: 100%;
+  opacity: 1;
 }
 
 .container {
@@ -926,7 +927,9 @@ img {
 .hero-list__img {
   width: 35px;
   height: 35px;
-  border: 1px solid #fffafa;
+  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,11 +941,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 25px;
-  opacity: 0.2;
-}
-
-.hero-list__num {
-  opacity: 1;
 }
 
 /* стили для подвала */
