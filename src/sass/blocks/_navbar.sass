@@ -34,7 +34,6 @@
       &:hover
         &:after
           width: 100%
-
   &__phone
     display: block    
     text-decoration: none
@@ -59,12 +58,100 @@
     &:hover
       &:after
         width: 100%
+  &-mobile 
+    position: relative
+    top: 25px
+    left: 25px
+    z-index: 1
+    -webkit-user-select: none
+    user-select: none
+    &__input
+      display: flex
+      width: 40px
+      height: 32px
+      position: absolute
+      opacity: 0
+      z-index: 2
+      &:active
+        background-color:transparent
+      &:checked ~ span
+        opacity: 1
+        transform: rotate(45deg) translate(-3px, -1px)
+      &:checked ~ span:nth-last-child(3)        
+        opacity: 0
+        transform: rotate(0deg) scale(0.2, 0.2)
+      &:checked ~ span:nth-last-child(2)
+        transform: rotate(-45deg) translate(0, -1px)
+      &:checked ~ ul
+        transform: none
+    &__link
+      text-decoration: none
+      color: #1E1E23
+      font-size: 14px
+      +reg
+      transition: 200ms
+      &:after
+        content: ''
+        display: block
+        height: 1px
+        background-color: $main-color
+        transition: 0.2s
+        bottom: 0
+        left: 0
+        right: 0
+        width: 0%      
+      &:hover
+        &:after
+          width: 68%
+    &__ul
+      padding: 0
+      list-style-type: none
+      position: absolute
+      width: 305px
+      height: 270px
+      border-radius: 5%
+      box-shadow: 0 0 10px #85888C
+      margin: 50px 0 0 -50px
+      padding: 20px 0 0 65px
+      background-color: $bg-color
+      -webkit-font-smoothing: antialiased
+      transform-origin: 0% 0%
+      transform: translate(-100%, 0)
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)      
+    &__li
+      padding: 10px 0
+      transition-delay: 2s
+    &__nav
+      height: 65px
+    &__btn
+      display: flex
+      width: 29px
+      height: 2px
+      margin-bottom: 5px
+      position: relative
+      background: #ffffff
+      border-radius: 3px
+      z-index: 1
+      transform-origin: 5px 0px
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+      transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+      transition: opacity 0.55s ease
+      &:first-child
+        transform-origin: 0% 0%
+      &:nth-last-child(2)
+        transform-origin: 0% 100%  
 
 @media (max-width: 1200px)
   .navbar
     &-block
-      justify-content: space-around
+      justify-content: space-around    
 
+@media (min-width: 768px)
+  .navbar  
+    &-mobile
+      &__nav
+        display: none  
+        
 @media (max-width: 768px)
   .navbar  
     &-info
@@ -80,6 +167,10 @@
     &__phone
       color: white
       padding-bottom: 13px
+    &-mobile
+      &__nav
+        display: flex
+        flex-direction: column
 
 
     

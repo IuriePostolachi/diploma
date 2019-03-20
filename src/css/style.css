@@ -690,10 +690,153 @@ img {
   width: 100%;
 }
 
+.navbar-mobile {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.navbar-mobile__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.navbar-mobile__input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-3px, -1px);
+          transform: rotate(45deg) translate(-3px, -1px);
+}
+
+.navbar-mobile__input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.navbar-mobile__input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+.navbar-mobile__input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.navbar-mobile__link {
+  text-decoration: none;
+  color: #1E1E23;
+  font-size: 14px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.navbar-mobile__link:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #23bac1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+}
+
+.navbar-mobile__link:hover:after {
+  width: 68%;
+}
+
+.navbar-mobile__ul {
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  width: 305px;
+  height: 270px;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 0 10px #85888C;
+          box-shadow: 0 0 10px #85888C;
+  margin: 50px 0 0 -50px;
+  padding: 20px 0 0 65px;
+  background-color: #e7e7e7;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.navbar-mobile__li {
+  padding: 10px 0;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.navbar-mobile__nav {
+  height: 65px;
+}
+
+.navbar-mobile__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 5px 0px;
+          transform-origin: 5px 0px;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-transition: opacity 0.55s ease;
+  transition: opacity 0.55s ease;
+}
+
+.navbar-mobile__btn:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.navbar-mobile__btn:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
 @media (max-width: 1200px) {
   .navbar-block {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-mobile__nav {
+    display: none;
   }
 }
 
@@ -714,6 +857,15 @@ img {
   .navbar__phone {
     color: white;
     padding-bottom: 13px;
+  }
+  .navbar-mobile__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
