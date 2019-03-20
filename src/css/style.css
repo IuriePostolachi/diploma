@@ -604,6 +604,42 @@ img {
   margin: auto;
 }
 
+.input {
+  display: block;
+  margin: auto;
+  border: 1px solid #e8e8e8;
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Proxima Nova Thin', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.35px;
+  color: #7c7c7c;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 260px;
+  height: 60px;
+  background-color: #23bac1;
+  border: none;
+  outline: none;
+  letter-spacing: 0.7px;
+}
+
+.button:hover {
+  background: #21b2b8;
+  cursor: pointer;
+}
+
 /* Импорт стилей навигационного меню */
 .navbar {
   background-color: #e7e7e7;
@@ -631,13 +667,15 @@ img {
 
 .navbar__menu-tabs {
   display: inline-block;
-  padding-right: 26px;
+  padding-right: 23px;
   font-size: 14px;
   margin-right: 5px;
-  margin-left: 2px;
+  margin-left: 1px;
   text-decoration: none;
   position: relative;
   color: #1f1f1f;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__menu-tabs:after {
@@ -658,6 +696,18 @@ img {
   width: 100%;
 }
 
+.navbar__menu a:nth-child(1) {
+  padding-right: 26px;
+}
+
+.navbar__menu a:nth-child(2) {
+  padding-right: 21px;
+}
+
+.navbar__menu a:nth-child(3), .navbar__menu a:nth-child(4), .navbar__menu a:nth-child(5) {
+  padding-right: 25px;
+}
+
 .navbar__phone {
   display: block;
   text-decoration: none;
@@ -665,6 +715,7 @@ img {
   font-size: 17px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 .navbar__callback {
@@ -873,11 +924,8 @@ img {
 /* Стили для главного экрана */
 .hero {
   background: url("../img/hero/hero-bg.jpg") no-repeat;
-  background-size: 100%;
-  background-position: center;
-  position: relative;
-  padding-bottom: 100px;
-  padding-top: 50px;
+  background-size: 100% 100%;
+  background-position: center top;
 }
 
 .hero-block {
@@ -887,6 +935,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 80px 3px 50px 0;
 }
 
 .hero-text {
@@ -897,9 +946,12 @@ img {
 
 .hero-text__title {
   font-size: 48px;
+  width: 70%;
+  line-height: 1.25;
+  letter-spacing: 0.25px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
-  margin-bottom: 49px;
+  margin-left: -1px;
 }
 
 .hero-text__subtitle {
@@ -907,7 +959,9 @@ img {
   font-size: 20px;
   font-family: 'Proxima Nova Thin', sans-serif;
   font-weight: 300;
-  margin-bottom: 66px;
+  letter-spacing: 0.3px;
+  padding-bottom: 45px;
+  margin-left: -2px;
 }
 
 .hero-list__item {
@@ -917,11 +971,40 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 21px;
+  margin-left: -40px;
 }
 
 .hero-list__item:last-child {
-  margin-bottom: 0;
+  padding-bottom: 32px;
+}
+
+.hero-list__item:nth-child(1) span:nth-child(2) {
+  width: 153px;
+  letter-spacing: 0.15px;
+  margin-left: 1px;
+}
+
+.hero-list__item:nth-child(2) span:nth-child(2) {
+  width: 153px;
+  letter-spacing: 0.15px;
+  margin-left: 2px;
+}
+
+.hero-list__item:nth-child(4) span:nth-child(2) {
+  width: 153px;
+  letter-spacing: 0.15px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.hero-list__item:nth-child(4) div:nth-child(1) {
+  margin-top: 2px;
+  margin-left: -2px;
+}
+
+.hero-list__item:nth-child(3) span:nth-child(2) {
+  width: 240px;
 }
 
 .hero-list__img {
@@ -941,6 +1024,57 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 25px;
+}
+
+.hero-list__num {
+  font-size: 16px;
+  font-family: 'Proxima Nova Thin', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.hero-list__text {
+  font-size: 15px;
+  font-family: 'Proxima Nova Thin', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+
+.hero__input {
+  margin-bottom: 15px;
+}
+
+.hero__button {
+  margin-top: 20px;
+}
+
+.form {
+  display: block;
+  padding: 16px 55px 0 55px;
+  width: 370px;
+  height: 429px;
+  margin-top: 45px;
+  background-color: #ffffff;
+}
+
+.form__title {
+  font-size: 18px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1f1f1f;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+#another-form-text {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 700;
+  margin-left: 6px;
 }
 
 /* стили для подвала */

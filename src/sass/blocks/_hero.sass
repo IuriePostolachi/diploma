@@ -1,32 +1,63 @@
 .hero
   background: url('../img/hero/hero-bg.jpg') no-repeat
-  background-size: 100% 
-  background-position: center
-  position: relative
-  padding-bottom: 100px 
-  padding-top: 50px
+  background-size: 100% 100%
+  background-position: center top
   &-block
     display: flex
     justify-content: space-between
+    padding: 80px 3px 50px 0
   &-text
     flex-basis: 75%  
     color: $light-text
     &__title
       font-size: 48px
+      width: 70%
+      line-height: 1.25
+      letter-spacing: 0.25px
       +reg
-      margin-bottom: 49px
+      margin-left: -1px
     &__subtitle
       display: inline-block
       font-size: 20px
       +thin 
-      margin-bottom: 66px
+      letter-spacing: 0.3px
+      padding-bottom: 45px
+      margin-left: -2px
   &-list
     &__item
       display: flex
       align-items: center
-      margin-bottom: 27px
+      margin-bottom: 21px
+      margin-left: -40px      
       &:last-child
-        margin-bottom: 0
+        padding-bottom: 32px
+      &:nth-child(1)
+        & span
+          &:nth-child(2)
+            width: 153px
+            letter-spacing: 0.15px
+            margin-left: 1px
+      &:nth-child(2)
+        & span
+          &:nth-child(2)
+            width: 153px
+            letter-spacing: 0.15px
+            margin-left: 2px
+      &:nth-child(4)
+        & span
+          &:nth-child(2)
+            width: 153px
+            letter-spacing: 0.15px
+            margin-left: 2px
+            margin-top: 2px
+        & div
+          &:nth-child(1)
+            margin-top: 2px
+            margin-left: -2px
+      &:nth-child(3)
+        & span
+          &:nth-child(2)
+            width: 240px
     &__img
       width: 35px
       height: 35px
@@ -41,6 +72,43 @@
       justify-content: center
       margin-right: 25px
     &__num
-    
+      font-size: 16px
+      +thin
+      color: $white-text
+    &__text
+      font-size: 15px
+      +thin
+      color: $white-text
+      letter-spacing: 0.2px
+  &__input
+    margin-bottom: 15px
+  &__button
+    margin-top: 20px
+.form
+  display: block
+  padding: 16px 55px 0 55px
+  width: 370px
+  height: 429px
+  margin-top: 45px
+  background-color: $card-color
+  &__title
+    font-size: 18px
+    +bold
+    line-height: 1.25
+    color: $dark-text
+    width: 250px      
+    margin-left: auto
+    margin-right: auto
+    padding-bottom: 8px
+    text-align: center
+    // letter-spacing: 0.16px
+#another-form-text
+  +bold
+  margin-left: 6px
+  
+  
+
+
+
 
   

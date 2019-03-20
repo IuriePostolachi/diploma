@@ -13,13 +13,14 @@
   &__menu
     &-tabs
       display: inline-block
-      padding-right: 26px
+      padding-right: 23px
       font-size: 14px
       margin-right: 5px
-      margin-left: 2px
+      margin-left: 1px
       text-decoration: none
       position: relative
-      color: $dark-text
+      color: $dark-text 
+      +bold     
       &:after
         content: ''
         display: block
@@ -34,12 +35,20 @@
       &:hover
         &:after
           width: 100%
+    & a
+      &:nth-child(1)
+        padding-right: 26px
+      &:nth-child(2)
+        padding-right: 21px
+      &:nth-child(3), &:nth-child(4), &:nth-child(5)
+        padding-right: 25px
   &__phone
     display: block    
     text-decoration: none
     color: $dark-text    
     font-size: 17px
     +bold
+    letter-spacing: 0.2px
   &__callback
     text-decoration: none 
     font-size: 14px   
