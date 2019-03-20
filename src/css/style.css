@@ -616,6 +616,7 @@ img {
 }
 
 .navbar-block {
+  background-color: #e7e7e7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,6 +688,33 @@ img {
 
 .navbar__callback:hover:after {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .navbar-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-info {
+    padding-top: 16px;
+    margin-left: auto;
+  }
+  .navbar-block {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    padding-right: 15px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__phone {
+    color: white;
+    padding-bottom: 13px;
+  }
 }
 
 /* Стили для главного экрана */
