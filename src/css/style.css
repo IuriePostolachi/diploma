@@ -636,7 +636,7 @@ img {
   margin-left: 2px;
   text-decoration: none;
   position: relative;
-  color: black;
+  color: #1f1f1f;
 }
 
 .navbar__menu-tabs:after {
@@ -660,7 +660,7 @@ img {
 .navbar__phone {
   display: block;
   text-decoration: none;
-  color: black;
+  color: #1f1f1f;
   font-size: 17px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-weight: 700;
@@ -736,7 +736,7 @@ img {
 
 .navbar-mobile__link {
   text-decoration: none;
-  color: #1E1E23;
+  color: #1f1f1f;
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
@@ -770,7 +770,7 @@ img {
   border-radius: 5%;
   -webkit-box-shadow: 0 0 10px #85888C;
           box-shadow: 0 0 10px #85888C;
-  margin: 50px 0 0 -50px;
+  margin: 30px 0 0 -50px;
   padding: 20px 0 0 65px;
   background-color: #e7e7e7;
   -webkit-font-smoothing: antialiased;
@@ -848,14 +848,14 @@ img {
   .navbar-block {
     position: absolute;
     width: 100%;
-    background-color: black;
+    background-color: #1f1f1f;
     padding-right: 15px;
   }
   .navbar__menu {
     display: none;
   }
   .navbar__phone {
-    color: white;
+    color: #fffafa;
     padding-bottom: 13px;
   }
   .navbar-mobile__nav {
@@ -870,6 +870,81 @@ img {
 }
 
 /* Стили для главного экрана */
+.hero {
+  background: url("../img/hero/hero-bg.jpg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  color: #fffafa;
+}
+
+.hero-text__title {
+  font-size: 48px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  margin-bottom: 49px;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Proxima Nova Thin', sans-serif;
+  font-weight: 300;
+  margin-bottom: 66px;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 27px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.hero-list__img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fffafa;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 25px;
+  opacity: 0.2;
+}
+
+.hero-list__num {
+  opacity: 1;
+}
+
 /* стили для подвала */
 /* Стили модального окна */
 /*# sourceMappingURL=style.css.map */
