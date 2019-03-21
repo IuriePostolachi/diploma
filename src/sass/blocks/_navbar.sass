@@ -85,6 +85,7 @@
         background-color:transparent
       &:checked ~ span
         opacity: 1
+        background-color: #000
         transform: rotate(45deg) translate(-3px, -1px)
       &:checked ~ span:nth-last-child(3)        
         opacity: 0
@@ -103,12 +104,6 @@
       padding: 0
       list-style-type: none
       position: absolute
-      width: 305px
-      height: 270px
-      border-radius: 5%
-      box-shadow: 0 0 10px #85888C
-      margin: 30px 0 0 -50px
-      padding: 20px 0 0 65px
       background-color: $bg-color
       -webkit-font-smoothing: antialiased
       transform-origin: 0% 0%
@@ -140,23 +135,24 @@
 @media (max-width: 1200px)
   .navbar
     &-block
-      justify-content: space-around    
+      justify-content: space-around
+    
 
-@media (min-width: 768px)
+@media (min-width: 1108px)
   .navbar  
     &-mobile
       &__nav
         display: none  
 
-@media (max-width: 768px)
+@media (max-width: 1108px)
   .navbar  
     &-info
       padding-top: 16px
       margin-left: auto
     &-block
       position: absolute
-      width: 100%     
-      background-color: $dark-text
+      width: 92%     
+      background-color: transparent
       padding-right: 15px
     &__menu
       display: none
@@ -167,6 +163,32 @@
       &__nav
         display: flex
         flex-direction: column
+      &__ul
+        display: flex
+        justify-content: space-around
+        width: 890px
+        height: 35px
+        margin: -35px 0 0 -75px
+        padding: 1px 0 0 84px
+        border-radius: 0
+        font-size: 12px
+
+@media (max-width: 876px)
+  .navbar
+    &-mobile
+      top: 25px
+      left: 6px
+      &__ul
+        display: block
+        width: 274px
+        height: 285px
+        border-radius: 5%
+        margin: -48px 0 0 -98px
+        padding: 55px 0 0 95px
+  
+
+      
+
 
 
     
