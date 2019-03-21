@@ -1,13 +1,13 @@
 .hero
-  background: url('../img/hero/hero-bg.jpg') no-repeat
-  background-size: 100% 100%
-  background-position: center top
+  &-section
+    background: url('../img/hero/hero-bg.jpg') no-repeat
+    background-position: center top
+    background-size: cover
   &-block
     display: flex
     justify-content: space-between
     padding: 80px 3px 50px 0
   &-text
-    flex-basis: 75%  
     color: $light-text
     &__title
       font-size: 48px
@@ -106,9 +106,96 @@
   +bold
   margin-left: 6px
   
-  
+@media (max-width: 1200px)
+  .hero
+    &-text
+      &__title
+        width: 90%
+@media (max-width: 1108px)
+  .hero
+      &-text
+        &__title
+          font-size: 44px
 
+@media (max-width: 876px)
+  .hero
+    &-block
+      display: flex
+      flex-direction: column
+    &-text
+      &__title
+        position: relative
+        margin-left: auto
+        text-align: right
+        width: 74%
+      &__subtitle
+        display: block
+        position: relative
+        margin-left: auto
+        text-align: right
+    &-list
+      &__item
+        margin-left: 40px   
+  .form
+    margin-left: auto
+    margin-right: auto 
 
+@media (max-width: 544px)
+  .hero
+    &-block
+      padding: 100px 3px 50px 0
+    &-text 
+      &__title
+        width: 62%
+        font-size: 28px
+      &__subtitle
+        font-size: 14px
+        padding-bottom: 45px
 
+@media (max-width: 425px)
+  .hero
+    &-text 
+      &__title
+        width: 95%
+        margin-right: auto
+        margin-left: auto
+        text-align: center
+      &__subtitle
+        padding-top: 14px
+        margin-right: auto
+        margin-left: auto
+        text-align: center
+    &-list
+      &__item
+        margin-left: -5px
+    &__input
+      width: 75%
+      font-size: 13px
+    &__button
+      width: 75%
+      display: 12px
+  .form
+    padding: 16px 0 0 0
+    width: 96%
+    margin-top: 0
+    &__title
+      margin-right: auto
+      margin-left: auto
+      text-align: center
+      font-size: 15px
+
+@media (max-width: 360px)
+  .hero
+    &-text 
+      &__title
+        width: 100%
+        font-size: 26px
+    &-list
+      &__item
+        margin-left: -20px
+  .form
+    width: 100%
+
+    
 
   
