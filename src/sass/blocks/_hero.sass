@@ -83,7 +83,23 @@
   &__input
     margin-bottom: 15px
   &__button
-    margin-top: 20px
+    display: block  
+    margin: auto
+    text-align: center
+    font-size: 15px
+    +reg
+    text-transform: uppercase
+    color: $white-text
+    width: 260px
+    height: 60px
+    background-color: $btn-color
+    border: none
+    outline: none
+    letter-spacing: 0.7px
+    margin-top: 20px    
+    &:hover
+      background: darken($main-color, 2%)
+      cursor: pointer
   &__form
     display: block
     padding: 16px 55px 0 55px

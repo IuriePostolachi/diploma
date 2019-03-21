@@ -623,28 +623,6 @@ img {
   outline: none;
 }
 
-.button {
-  display: block;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  font-family: 'Proxima Nova Regular', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 260px;
-  height: 60px;
-  background-color: #23bac1;
-  border: none;
-  outline: none;
-  letter-spacing: 0.7px;
-}
-
-.button:hover {
-  background: #21b2b8;
-  cursor: pointer;
-}
-
 #username-error {
   position: absolute;
   display: block;
@@ -1099,7 +1077,26 @@ img {
 }
 
 .hero__button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 260px;
+  height: 60px;
+  background-color: #23bac1;
+  border: none;
+  outline: none;
+  letter-spacing: 0.7px;
   margin-top: 20px;
+}
+
+.hero__button:hover {
+  background: #21b2b8;
+  cursor: pointer;
 }
 
 .hero__form {
@@ -1235,6 +1232,140 @@ img {
   .hero__form {
     width: 100%;
   }
+}
+
+.price {
+  padding-top: 63px;
+}
+
+.price__title {
+  display: block;
+  text-align: center;
+  padding-bottom: 32px;
+  font-size: 36px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  margin-left: -5px;
+  letter-spacing: 0.25px;
+}
+
+.price__subtitle {
+  display: block;
+  text-align: center;
+  padding-bottom: 87px;
+  margin-left: -4px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.card {
+  width: 370px;
+  height: 680px;
+  text-align: center;
+  margin-left: -3px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__price:nth-child(2) {
+  margin-right: -2px;
+}
+
+.card__price:nth-child(3) {
+  margin-right: 3px;
+}
+
+.card__title {
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.card__title:nth-child(1) {
+  margin-right: -3px;
+}
+
+.card__link {
+  display: block;
+  font-size: 16px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  padding-bottom: 7px;
+  text-decoration: none;
+  position: relative;
+  color: #1f1f1f;
+}
+
+.card__link:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #23bac1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 9px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 3%;
+}
+
+.card__link:hover:after {
+  width: 20%;
+}
+
+.card__last-link {
+  display: block;
+  font-size: 16px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  color: #1f1f1f;
+}
+
+.card__blocklist {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 286px;
+  padding-top: 28px;
+  letter-spacing: -0.08px;
+}
+
+.card__button {
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 4px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #1f1f1f;
+  width: 230px;
+  height: 55px;
+  background-color: transparent;
+  border: 1px solid #aeaeae;
+  outline: none;
 }
 
 /* стили для подвала */
