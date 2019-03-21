@@ -19,6 +19,9 @@ img
   +thin
   letter-spacing: 0.35px
   color: $inputtext-color
+  &:focus
+    border-color: $input-bg-color
+    outline: none
 .button
   display: block  
   margin: auto
@@ -36,6 +39,33 @@ img
   &:hover
     background: darken($main-color, 2%)
     cursor: pointer
+#username-error
+  position: absolute
+  display: block
+  margin-top: -15px
+  padding-left: 45px
+  font-style: oblique
+  font-size: 12px
+  text-align: center
+  +reg 
+#phone-error
+  position: absolute
+  display: block
+  margin-top: -15px
+  padding-left: 45px
+  font-style: oblique
+  font-size: 12px
+  +reg   
+#email-error
+  position: absolute
+  display: block
+  margin-top: -15px
+  padding-left: 45px
+  font-style: oblique
+  font-size: 12px
+  +reg 
+.error
+  border-color: red
 
 @media (max-width: 1200px)
   .container

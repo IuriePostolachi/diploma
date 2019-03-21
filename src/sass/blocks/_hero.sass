@@ -15,7 +15,7 @@
       line-height: 1.25
       letter-spacing: 0.25px
       +reg
-      margin-left: -1px
+      margin-left: -2px
     &__subtitle
       display: inline-block
       font-size: 20px
@@ -84,24 +84,23 @@
     margin-bottom: 15px
   &__button
     margin-top: 20px
-.form
-  display: block
-  padding: 16px 55px 0 55px
-  width: 370px
-  height: 429px
-  margin-top: 45px
-  background-color: $card-color
-  &__title
-    font-size: 18px
-    +bold
-    line-height: 1.25
-    color: $dark-text
-    width: 250px      
-    margin-left: auto
-    margin-right: auto
-    padding-bottom: 8px
+  &__form
+    display: block
+    padding: 16px 55px 0 55px
+    width: 370px
+    height: 429px
+    margin-top: 45px
+    background-color: $card-color
     text-align: center
-    // letter-spacing: 0.16px
+    &__title
+      font-size: 18px
+      +bold
+      line-height: 1.25
+      color: $dark-text
+      width: 250px      
+      margin-left: auto
+      margin-right: auto
+      padding-bottom: 8px
 #another-form-text
   +bold
   margin-left: 6px
@@ -136,9 +135,9 @@
     &-list
       &__item
         margin-left: 40px   
-  .form
-    margin-left: auto
-    margin-right: auto 
+    &__form
+      margin-left: auto
+      margin-right: auto 
 
 @media (max-width: 544px)
   .hero
@@ -174,15 +173,15 @@
     &__button
       width: 75%
       display: 12px
-  .form
-    padding: 16px 0 0 0
-    width: 96%
-    margin-top: 0
-    &__title
-      margin-right: auto
-      margin-left: auto
-      text-align: center
-      font-size: 15px
+    &__form
+      padding: 16px 0 0 0
+      width: 96%
+      margin-top: 0
+      &__title
+        margin-right: auto
+        margin-left: auto
+        text-align: center
+        font-size: 15px
 
 @media (max-width: 360px)
   .hero
@@ -193,8 +192,8 @@
     &-list
       &__item
         margin-left: -20px
-  .form
-    width: 100%
+    &__form
+      width: 100%
 
     
 

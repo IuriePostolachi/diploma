@@ -618,6 +618,11 @@ img {
   color: #7c7c7c;
 }
 
+.input:focus {
+  border-color: #e8e8e8;
+  outline: none;
+}
+
 .button {
   display: block;
   margin: auto;
@@ -638,6 +643,44 @@ img {
 .button:hover {
   background: #21b2b8;
   cursor: pointer;
+}
+
+#username-error {
+  position: absolute;
+  display: block;
+  margin-top: -15px;
+  padding-left: 45px;
+  font-style: oblique;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+#phone-error {
+  position: absolute;
+  display: block;
+  margin-top: -15px;
+  padding-left: 45px;
+  font-style: oblique;
+  font-size: 12px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+#email-error {
+  position: absolute;
+  display: block;
+  margin-top: -15px;
+  padding-left: 45px;
+  font-style: oblique;
+  font-size: 12px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.error {
+  border-color: red;
 }
 
 @media (max-width: 1200px) {
@@ -961,7 +1004,7 @@ img {
   letter-spacing: 0.25px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .hero-text__subtitle {
@@ -1059,16 +1102,17 @@ img {
   margin-top: 20px;
 }
 
-.form {
+.hero__form {
   display: block;
   padding: 16px 55px 0 55px;
   width: 370px;
   height: 429px;
   margin-top: 45px;
   background-color: #ffffff;
+  text-align: center;
 }
 
-.form__title {
+.hero__form__title {
   font-size: 18px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-weight: 700;
@@ -1078,7 +1122,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 8px;
-  text-align: center;
 }
 
 #another-form-text {
@@ -1124,7 +1167,7 @@ img {
   .hero-list__item {
     margin-left: 40px;
   }
-  .form {
+  .hero__form {
     margin-left: auto;
     margin-right: auto;
   }
@@ -1168,12 +1211,12 @@ img {
     width: 75%;
     display: 12px;
   }
-  .form {
+  .hero__form {
     padding: 16px 0 0 0;
     width: 96%;
     margin-top: 0;
   }
-  .form__title {
+  .hero__form__title {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -1189,7 +1232,7 @@ img {
   .hero-list__item {
     margin-left: -20px;
   }
-  .form {
+  .hero__form {
     width: 100%;
   }
 }
