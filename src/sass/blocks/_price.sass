@@ -1,0 +1,98 @@
+.price
+  padding-top: 63px
+  &__title
+    display: block
+    text-align: center
+    padding-bottom: 32px
+    font-size: 36px
+    +reg
+    color: $black-text
+    margin-left: -5px
+    letter-spacing: 0.25px    
+  &__subtitle
+    display: block
+    text-align: center
+    padding-bottom: 87px
+    margin-left: -4px
+    font-size: 20px
+    color: $black-text     
+.card
+  width: 370px
+  height: 680px
+  text-align: center
+  margin-left: -3px
+  &:hover
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+  &s
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__price
+    &:nth-child(2)
+      margin-right: -2px
+    &:nth-child(3)
+      margin-right: 3px
+  &__title
+    font-size: 20px
+    letter-spacing: 0.1px
+    &:nth-child(1)
+      margin-right: -3px
+
+  &__link
+    display: block
+    font-size: 16px
+    +reg
+    padding-bottom: 7px
+    text-decoration: none
+    position: relative
+    color: $dark-text 
+    &:after
+      content: ''
+      display: block
+      height: 1px
+      background-color: $main-color
+      transition: all 0.2s
+      bottom: 0
+      left: 0
+      right: 0
+      margin-top: 9px
+      margin-right: auto
+      margin-left: auto
+      width: 3%
+    &:hover
+      &:after
+        width: 20%
+  &__last
+    &-link
+      display: block
+      font-size: 16px
+      +reg
+      text-decoration: none
+      position: relative
+      color: $dark-text
+  &__blocklist
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 300px
+    height: 286px
+    padding-top: 28px
+    letter-spacing: -0.08px
+  &__button
+    display: block  
+    margin: auto
+    padding-top: 20px
+    padding-left: 4px
+    text-align: center
+    font-size: 13px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.7px
+    color: $dark-text
+    width: 230px
+    height: 55px
+    background-color: transparent
+    border: 1px solid $btn-border
+    outline: none
+
+    
