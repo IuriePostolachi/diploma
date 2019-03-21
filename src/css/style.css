@@ -559,7 +559,9 @@ img {
 
 /* Импорт стилей навигационного меню */
 .navbar {
-  background-color: #e7e7e7; }
+  background-color: #e7e7e7;
+  position: fixed;
+  width: 100%; }
   .navbar-info {
     padding-top: 10px;
     padding-bottom: 8px;
@@ -732,39 +734,40 @@ img {
     display: none; } }
 
 @media (max-width: 1108px) {
-  .navbar-info {
-    padding-top: 16px;
-    margin-left: auto; }
-  .navbar-block {
-    position: absolute;
-    width: 92%;
-    background-color: transparent;
-    padding-right: 15px; }
-  .navbar__menu {
-    display: none; }
-  .navbar__phone {
-    color: #fffafa;
-    padding-bottom: 13px; }
-  .navbar-mobile__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .navbar-mobile__ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 890px;
-    height: 35px;
-    margin: -35px 0 0 -75px;
-    padding: 1px 0 0 84px;
-    border-radius: 0;
-    font-size: 12px; } }
+  .navbar {
+    background-color: #190b0be0; }
+    .navbar-info {
+      padding-top: 16px;
+      margin-left: auto; }
+    .navbar-block {
+      width: 92%;
+      padding-right: 15px;
+      background-color: transparent; }
+    .navbar__menu {
+      display: none; }
+    .navbar__phone {
+      color: #fffafa;
+      padding-bottom: 13px; }
+    .navbar-mobile__nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .navbar-mobile__ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 890px;
+      height: 35px;
+      margin: -35px 0 0 -75px;
+      padding: 1px 0 0 84px;
+      border-radius: 0;
+      font-size: 12px; } }
 
 @media (max-width: 876px) {
   .navbar-mobile {

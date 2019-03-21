@@ -1,5 +1,7 @@
 .navbar  
   background-color: $bg-color
+  position: fixed
+  width: 100%
   &-info
     padding-top: 10px
     padding-bottom: 8px
@@ -145,15 +147,17 @@
         display: none  
 
 @media (max-width: 1108px)
-  .navbar  
+  .navbar 
+    background-color: #190b0be0
     &-info
       padding-top: 16px
       margin-left: auto
     &-block
-      position: absolute
-      width: 92%     
-      background-color: transparent
+      width: 92% 
       padding-right: 15px
+      background-color: transparent
+
+
     &__menu
       display: none
     &__phone
