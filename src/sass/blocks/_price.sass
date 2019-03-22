@@ -21,14 +21,14 @@
   height: 680px
   text-align: center
   margin-left: -3px
-  filter: grayscale(95%)
+  z-index: 0
+  filter: grayscale(100%)
   -webkit-filter: grayscale(95%)
   -webkit-transition: .2s
   -moz-transition: .2s
   transition: .2s
   &:hover
     filter: grayscale(0%)
-    opacity: 1
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
   &s
     display: flex
@@ -44,14 +44,13 @@
     letter-spacing: 0.1px
     &:nth-child(1)
       margin-right: -3px
-
   &__link
     display: block
     font-size: 16px
     +reg
     padding-bottom: 7px
     text-decoration: none
-    position: relative
+    // position: relative
     color: $dark-text 
     &:after
       content: ''
@@ -75,7 +74,7 @@
       font-size: 16px
       +reg
       text-decoration: none
-      position: relative
+      // position: relative
       color: $dark-text
   &__blocklist
     display: block
