@@ -92,7 +92,7 @@
     color: $white-text
     width: 260px
     height: 60px
-    background-color: $btn-color
+    background-color: $main-color
     border: none
     outline: none
     letter-spacing: 0.7px
@@ -131,6 +131,12 @@
       &-text
         &__title
           font-size: 44px
+
+@media (max-width: 991px)
+  .hero
+    &__button
+      &:hover
+        background-color: $main-color
 
 @media (max-width: 768px)
   .hero
