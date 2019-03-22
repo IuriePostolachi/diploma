@@ -671,6 +671,8 @@ img {
 /* Импорт стилей навигационного меню */
 .navbar {
   background-color: #e7e7e7;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-info {
@@ -898,15 +900,17 @@ img {
 }
 
 @media (max-width: 1108px) {
+  .navbar {
+    background-color: #190b0be0;
+  }
   .navbar-info {
     padding-top: 16px;
     margin-left: auto;
   }
   .navbar-block {
-    position: absolute;
     width: 92%;
-    background-color: transparent;
     padding-right: 15px;
+    background-color: transparent;
   }
   .navbar__menu {
     display: none;
@@ -1264,9 +1268,16 @@ img {
   height: 680px;
   text-align: center;
   margin-left: -3px;
+  filter: grayscale(95%);
+  -webkit-filter: grayscale(95%);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .card:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  opacity: 1;
   -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
 }
