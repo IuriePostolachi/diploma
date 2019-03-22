@@ -25,8 +25,8 @@ $(document).ready(function () {
         required: "Введите ваш номер"
       },
       email: {
-        required: "На емайл отправим информацию",
-        email: "Введите емайл правильно"
+        required: "На e-mail отправим информацию",
+        email: "Введите e-mail правильно"
       }
     }
   });   

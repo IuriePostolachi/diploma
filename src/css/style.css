@@ -667,6 +667,24 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: 90%;
+  }
+}
+
 /* Импорт стилей навигационного меню */
 .navbar {
   background-color: #e7e7e7;
@@ -939,7 +957,7 @@ img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: fixed;
-    width: 102%;
+    width: 103%;
     height: 74px;
     margin: -51px 0 0 -60px;
     padding: 16px 0 0 75px;
@@ -975,7 +993,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 80px 3px 50px 0;
+  padding: 136px 3px 50px 0;
 }
 
 .hero-text {
@@ -1259,22 +1277,37 @@ img {
 .price__title {
   display: block;
   text-align: center;
-  padding-bottom: 32px;
   font-size: 36px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
   color: #000000;
-  margin-left: -5px;
+  margin-left: -3px;
+  margin-top: 31px;
   letter-spacing: 0.25px;
+}
+
+.price__title__underline {
+  width: 31px;
+  height: 2px;
+  margin-top: -10px;
+  background-color: #23bac1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .price__subtitle {
   display: block;
   text-align: center;
   padding-bottom: 87px;
+  padding-top: 40px;
   margin-left: -4px;
   font-size: 20px;
   color: #000000;
+}
+
+#land {
+  margin-left: 10px;
 }
 
 .card {
@@ -1282,9 +1315,10 @@ img {
   height: 680px;
   text-align: center;
   margin-left: -3px;
+  margin-bottom: 31px;
   z-index: 0;
   filter: grayscale(100%);
-  -webkit-filter: grayscale(95%);
+  -webkit-filter: grayscale(100%);
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -1294,6 +1328,12 @@ img {
           filter: grayscale(0%);
   -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover #button {
+  background-color: #23bac1;
+  border: none;
+  color: #ffffff;
 }
 
 .cards {
@@ -1308,11 +1348,16 @@ img {
 }
 
 .card__price:nth-child(2) {
-  margin-right: -2px;
+  margin-right: 1px;
 }
 
 .card__price:nth-child(3) {
-  margin-right: 3px;
+  margin-right: 4px;
+}
+
+.card__price:nth-child(6) {
+  margin-right: 4px;
+  line-height: 21px;
 }
 
 .card__title {
@@ -1367,8 +1412,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
-  height: 286px;
+  width: 235px;
+  height: 288px;
   padding-top: 28px;
   letter-spacing: -0.08px;
 }
@@ -1376,8 +1421,8 @@ img {
 .card__button {
   display: block;
   margin: auto;
-  padding-top: 20px;
-  padding-left: 4px;
+  padding-top: 19px;
+  padding-left: 7px;
   text-align: center;
   font-size: 13px;
   font-weight: 900;
@@ -1389,6 +1434,41 @@ img {
   background-color: transparent;
   border: 1px solid #aeaeae;
   outline: none;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 544px) {
+  .price__title {
+    font-size: 34px;
+    margin-top: 0;
+  }
+  .price__subtitle {
+    font-size: 18px;
+    padding-bottom: 60px;
+  }
+  .card {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .price__title {
+    font-size: 30px;
+  }
+  .price__subtitle {
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  .card {
+    margin-bottom: 5px;
+  }
 }
 
 /* стили для подвала */

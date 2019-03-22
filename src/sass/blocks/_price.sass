@@ -3,42 +3,61 @@
   &__title
     display: block
     text-align: center
-    padding-bottom: 32px
     font-size: 36px
     +reg
     color: $black-text
-    margin-left: -5px
-    letter-spacing: 0.25px    
+    margin-left: -3px
+    margin-top: 31px
+    letter-spacing: 0.25px
+    &__underline
+      width: 31px
+      height: 2px
+      margin-top: -10px
+      background-color: $main-color
+      display: block
+      margin-left: auto
+      margin-right: auto    
   &__subtitle
     display: block
     text-align: center
     padding-bottom: 87px
+    padding-top: 40px
     margin-left: -4px
     font-size: 20px
-    color: $black-text     
+    color: $black-text
+#land
+  margin-left: 10px     
 .card
   width: 370px
   height: 680px
   text-align: center
   margin-left: -3px
+  margin-bottom: 31px
   z-index: 0
   filter: grayscale(100%)
-  -webkit-filter: grayscale(95%)
+  -webkit-filter: grayscale(100%)
   -webkit-transition: .2s
   -moz-transition: .2s
   transition: .2s
   &:hover
     filter: grayscale(0%)
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+    & #button    
+      background-color: $main-color
+      border: none
+      color: $white-text
   &s
     display: flex
     justify-content: space-between
     flex-wrap: wrap
   &__price
     &:nth-child(2)
-      margin-right: -2px
+      margin-right: 1px
     &:nth-child(3)
-      margin-right: 3px
+      margin-right: 4px 
+    &:nth-child(6)
+      margin-right: 4px
+      line-height: 21px     
   &__title
     font-size: 20px
     letter-spacing: 0.1px
@@ -50,7 +69,6 @@
     +reg
     padding-bottom: 7px
     text-decoration: none
-    // position: relative
     color: $dark-text 
     &:after
       content: ''
@@ -74,21 +92,20 @@
       font-size: 16px
       +reg
       text-decoration: none
-      // position: relative
       color: $dark-text
   &__blocklist
     display: block
     margin-left: auto
     margin-right: auto
-    width: 300px
-    height: 286px
+    width: 235px
+    height: 288px
     padding-top: 28px
     letter-spacing: -0.08px
   &__button
     display: block  
     margin: auto
-    padding-top: 20px
-    padding-left: 4px
+    padding-top: 19px
+    padding-left: 7px
     text-align: center
     font-size: 13px
     font-weight: 900
@@ -101,4 +118,29 @@
     border: 1px solid $btn-border
     outline: none
 
-    
+@media (max-width: 1200px)
+  .card
+    &s
+      justify-content: space-around
+      
+@media (max-width: 544px)
+  .price
+    &__title
+      font-size: 34px
+      margin-top: 0
+    &__subtitle
+      font-size: 18px
+      padding-bottom: 60px
+  .card
+    margin-bottom: 15px
+    margin-left: 0
+
+@media (max-width: 360px)
+  .price
+    &__title
+      font-size: 30px
+    &__subtitle
+      font-size: 16px
+      padding-bottom: 40px
+  .card
+    margin-bottom: 5px    
