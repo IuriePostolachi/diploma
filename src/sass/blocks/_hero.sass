@@ -132,25 +132,26 @@
         &__title
           font-size: 44px
 
-@media (max-width: 876px)
+@media (max-width: 768px)
   .hero
     &-block
       display: flex
       flex-direction: column
     &-text
       &__title
-        // position: relative
         margin-left: auto
-        text-align: right
-        width: 74%
+        text-align: center
+        width: 96%
       &__subtitle
         display: block
-        // position: relative
         margin-left: auto
-        text-align: right
+        text-align: center
     &-list
+      display: block
       &__item
-        margin-left: 40px   
+        margin-left: auto
+        margin-right: auto
+        width: 65%   
     &__form
       margin-left: auto
       margin-right: auto 
@@ -161,11 +162,14 @@
       padding: 100px 3px 50px 0
     &-text 
       &__title
-        width: 62%
+        width: 96%
         font-size: 28px
       &__subtitle
         font-size: 14px
         padding-bottom: 45px
+    &-list
+      &__item
+        width: 87%
 
 @media (max-width: 425px)
   .hero
@@ -183,6 +187,7 @@
     &-list
       &__item
         margin-left: -5px
+        width: 99%
     &__input
       width: 75%
       font-size: 13px
@@ -191,7 +196,7 @@
       display: 12px
     &__form
       padding: 16px 0 0 0
-      width: 96%
+      width: 100%
       margin-top: 0
       &__title
         margin-right: auto
@@ -205,9 +210,12 @@
       &__title
         width: 100%
         font-size: 26px
-    &-list
+    &-list      
       &__item
+        width: 116%
         margin-left: -20px
+      &__text
+        font-size: 13px
     &__form
       width: 100%
 

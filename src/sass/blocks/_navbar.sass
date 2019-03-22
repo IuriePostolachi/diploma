@@ -157,38 +157,38 @@
       width: 92% 
       padding-right: 15px
       background-color: transparent
-
-
     &__menu
       display: none
     &__phone
       color: $light-text
       padding-bottom: 13px
     &-mobile
+      top: 25px
+      left: 6px
       &__nav
         display: flex
         flex-direction: column
       &__ul
         display: flex
         justify-content: space-around
-        width: 890px
-        height: 35px
-        margin: -35px 0 0 -75px
-        padding: 1px 0 0 84px
+        position: fixed
+        width: 102%
+        height: 74px
+        margin: -51px 0 0 -60px
+        padding: 16px 0 0 75px
         border-radius: 0
-        font-size: 12px
+      &__link
+        font-weight: 600
 
-@media (max-width: 876px)
+@media (max-width: 768px)
   .navbar
     &-mobile
-      top: 25px
-      left: 6px
       &__ul
         display: block
-        width: 274px
-        height: 285px
+        width: 290px
+        height: 300px
         border-radius: 5%
-        margin: -48px 0 0 -98px
+        margin: -45px 0 0 -85px
         padding: 55px 0 0 95px
   
 
