@@ -1500,6 +1500,99 @@ img {
   }
 }
 
+.portfolio {
+  background-color: #e8e8e8;
+  padding-top: 96px;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+}
+
+.portfolio-title__underline {
+  width: 31px;
+  height: 2px;
+  margin-top: -10px;
+  background-color: #23bac1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-subtitle {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.slider-block {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slider-description {
+  margin-left: 84px;
+  margin-right: auto;
+}
+
+.slider-description__title {
+  padding-bottom: 53px;
+  margin-top: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.slider-description__note {
+  padding-bottom: 15px;
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #7f7f7f;
+}
+
+.slider-description__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.slider-description__details {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7f7f7f;
+}
+
+.slider-description__specify {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.arrows__left {
+  display: block;
+  margin-top: 13%;
+  position: absolute;
+}
+
+.arrows__right {
+  display: block;
+  position: absolute;
+  right: 10%;
+  margin-top: -5%;
+}
+
+.slick-slider {
+  width: 74%;
+  margin: auto;
+}
+
 /* стили для подвала */
 /* Стили модального окна */
 /*# sourceMappingURL=style.css.map */
