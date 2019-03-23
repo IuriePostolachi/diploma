@@ -16,6 +16,18 @@
 		font-weight: 400
 		letter-spacing: 0.2px
 		color: $white-text
+		&__hide
+			padding-right: 12px
+			text-align: center
+			margin-left: auto
+			margin-right: auto
+			margin-top: 0
+			margin-bottom: 95px
+			font-size: 20px
+			font-weight: 400
+			letter-spacing: 0.2px
+			color: $white-text
+			display: none
 	&__subtitle
 		display: block
 		width: 682px
@@ -55,3 +67,40 @@
 			line-height: 20px
 			font-weight: 300
 			color: $white-text
+
+@media (max-width: 1200px)
+	.goals
+		&__title
+			width: 90%
+		&__subtitle
+			width: 90%
+		&-block
+			justify-content: space-around
+
+@media (max-width: 864px)
+	.goals
+		&__title
+			font-size: 20px
+		&__subtitle
+			font-size: 20px
+
+@media (max-width: 701px)
+	.goals
+		&__title
+			display: none
+			&__hide
+				width: 80%
+				display: block
+		&__subtitle
+			display: none
+	
+@media (max-width: 413px)
+	.goals
+			&__title
+				&__hide
+					width: 99%
+					display: block
+					font-size: 18px
+
+		
+		

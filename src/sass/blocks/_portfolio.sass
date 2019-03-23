@@ -105,5 +105,193 @@
     color: $white-text
     outline: none
     border: none
-    cursor: pointer   
+    cursor: pointer
+    &:hover
+      background: darken($main-color, 2%)
 
+@media (max-width: 1200px)
+  .description
+    width: auto
+    &__details
+      display: flex
+      justify-content: space-between
+      &__text
+        width: auto        
+        &:nth-child(2)
+          position: relative
+          margin-left: 15%
+        &:nth-child(3)
+          position: relative
+          margin-left: 20%
+          width: auto
+    &__specify
+      display: flex
+      justify-content: space-around
+      &__text
+        width: auto       
+        &:nth-child(2)
+          position: relative
+          margin-left: 10%
+        &:nth-child(3)
+          position: relative
+          margin-left: 10%
+          margin-right: 15%
+          width: auto
+
+@media (max-width: 991px)
+  .portfolio
+    &-slider
+      &__block
+        flex-direction: column
+        justify-content: center
+      &__img
+        margin: auto      
+  .description
+    width: 450px
+    margin: auto 
+    &__title
+      display: block
+      text-align: center
+      margin: auto     
+      padding-top: 40px
+    &__details
+      display: flex
+      justify-content: space-between
+      &__text             
+        &:nth-child(2)
+          margin-left: 25%
+        &:nth-child(3)
+          margin-left: 20%
+    &__specify
+      display: flex
+      justify-content: space-between
+      &__text
+        width: auto       
+        &:nth-child(2)
+          position: relative
+          margin-left: 20%
+          margin-right: 5%
+        &:nth-child(3)
+          position: relative
+          margin-left: 3%
+          margin-right: 15%
+          width: auto        
+    &__button
+      margin: auto
+      &:hover
+        background-color: $main-color
+    
+@media (max-width: 991px)
+  .portfolio
+    &-title
+      font-size: 34px
+    &-subtitle
+      font-size: 18px
+      padding-top: 30px
+      padding-bottom: 70px
+  .description
+    width: 450px
+    &__note, &__subtitle
+      text-align: center
+    &__details
+      display: block 
+      &__text
+        margin-left: 18%                   
+        &:nth-child(2)
+          margin-left: 14%
+        &:nth-child(3)
+          margin-left: 10%
+    &__specify
+      display: block 
+      &__text 
+        margin-left: 19%
+        &:nth-child(2)
+          margin-left: 15%
+          margin-right: 10%
+        &:nth-child(3)
+          margin-left: 0%
+          margin-right: 0%
+
+@media (max-width: 650px)
+  .portfolio
+    &-title
+      font-size: 30px
+    &-subtitle
+      font-size: 16px
+      padding-bottom: 50px
+  .description
+    width: 300px
+    &__details 
+      &__text
+        margin-left: 0%                   
+        &:nth-child(2)
+          margin-left: 16%
+        &:nth-child(3)
+          margin-left: 10%
+    &__specify
+      &__text 
+        margin-left: 3%
+        &:nth-child(2)
+          margin-left: 15%
+          margin-right: 0%
+        &:nth-child(3)
+          margin-left: 18%
+
+@media (max-width: 426px)
+  .description
+    width: 250px
+    &__details 
+      &__text
+        font-size: 10px
+        margin-left: 2%                   
+        &:nth-child(2)
+          margin-left: 13%
+        &:nth-child(3)
+          margin-left: 10%
+    &__specify
+      &__text
+        font-size: 14px 
+        margin-left: 3%
+        &:nth-child(2)
+          margin-left: 15%
+        &:nth-child(3)
+          margin-left: 14%
+
+@media (max-width: 361px)
+  .portfolio
+    &-subtitle
+      font-size: 14px
+  .description
+    width: 230px
+    &__details 
+      &__text
+        position: absolute
+        margin-top: -15px
+        margin-left: 95px                   
+        &:nth-child(2)
+          position: absolute
+          margin-top: 40px
+          margin-left: 99px 
+        &:nth-child(3)
+          position: absolute
+          margin-top: 95px
+          margin-left: 70px 
+    &__specify
+      &__text
+        position: absolute
+        margin-top: -10px
+        margin-left: 100px 
+        &:nth-child(2)
+          position: absolute
+          margin-top: 45px
+          margin-left: 83px 
+        &:nth-child(3)
+          position: absolute
+          margin-top: 100px
+          margin-left: 93px 
+    &__button
+      margin-top: 90px
+
+@media (max-width: 360px)
+   .description
+      width: 225px
