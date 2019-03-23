@@ -1680,8 +1680,11 @@ img {
   padding-bottom: 50px;
   background-color: #191919; }
   .footer-map {
-    background: url("../img/footer/map.jpg") no-repeat top center;
+    background-image: url("../img/footer/map.jpg") no-repeat top center;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 420px; }
   .footer-block {
     padding-top: 60px;
@@ -1747,6 +1750,10 @@ img {
       width: 0%; }
     .footer__callback:hover:after {
       width: 100%; }
+
+.map-style {
+  width: 100%;
+  border-width: 0; }
 
 @media (max-width: 992px) {
   .footer__callback:hover:after {
