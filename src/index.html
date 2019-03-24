@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Макетная мастерская</title>
@@ -109,16 +110,16 @@
                         <!-- /.hero-list -->
                     </div>
                     <!-- /.hero-text -->
-                    <div class="form hero__form">
+                    <div class="form hero__form wow zoomIn">
                         <h3 class="hero__form__title">Оставьте заявку и получите <b id="another-form-text">расчет
                                 стоимость
                                 макета
                             </b><br>в течение <b>30 минут</b></h3>
-                        <form action="#" class="form hero-form">
+                        <form action="send.php" method="POST" class="form hero-form">
                             <input type="text" name="username" class="input hero__input" placeholder="Ваше имя">
                             <input type="tel" name="field" class="input phone hero__input" id="phone-hero" placeholder="Контактный телефон">
-                            <input type="email" name="email" class="input hero__input" placeholder="Электронная почта">
-                            <button class="send hero__button">Оставить заявку</button>
+                            <input type="user_email" name="email" class="input hero__input" placeholder="Электронная почта">
+                            <button type="submit" class="send hero__button">Оставить заявку</button>
                         </form>
                     </div>
                     <!-- /.hero-form -->
@@ -138,7 +139,7 @@
                 <span class="price__subtitle">Создаем макеты от небольших домов до космических станций</span>
                 <!-- /.price__subtitle -->
                 <div class="cards">
-                    <div class="card card__price">
+                    <div class="card card__price wow zoomIn" data-wow-delay="0.1s">
                         <h3 class="card__title">Архитектурные макеты</h3>
                         <!-- /.card__title -->
                         <img src="img/price/img1.jpg" alt="Архитектура" class="card__img">
@@ -156,7 +157,7 @@
                         <!-- /.button card__button -->
                     </div>
                     <!-- /.card card__price -->
-                    <div class="card card__price">
+                    <div class="card card__price wow zoomIn" data-wow-delay="0.2s">
                         <h3 class="card__title">Градостроительные макеты</h3>
                         <!-- /.card__title -->
                         <img src="img/price/img2.jpg" alt="Градостроительство" class="card__img">
@@ -173,7 +174,7 @@
                         <!-- /.button card__button -->
                     </div>
                     <!-- /.card card__price -->
-                    <div class="card card__price">
+                    <div class="card card__price wow fadeInUp" data-wow-delay="0.3s">
                         <h3 class="card__title">Промышленные макеты</h3>
                         <!-- /.card__title -->
                         <img src="img/price/img3.jpg" alt="Промышленные" class="card__img">
@@ -191,7 +192,7 @@
                         <!-- /.button card__button -->
                     </div>
                     <!-- /.card card__price -->
-                    <div class="card card__price">
+                    <div class="card card__price wow fadeInUp" data-wow-delay="0.4s">
                         <h3 class="card__title">Интерьерные макеты</h3>
                         <!-- /.card__title -->
                         <img src="img/price/img4.jpg" alt="Интерьер" class="card__img">
@@ -209,7 +210,7 @@
                         <!-- /.button card__button -->
                     </div>
                     <!-- /.card card__price -->
-                    <div class="card card__price">
+                    <div class="card card__price wow fadeInUp" data-wow-delay="0.5s">
                         <h3 id="land" class="card__title">Ландшафтные макеты</h3>
                         <!-- /.card__title -->
                         <img src="img/price/img5.jpg" alt="Ландшафт" class="card__img">
@@ -226,7 +227,7 @@
                         <!-- /.button card__button -->
                     </div>
                     <!-- /.card card__price -->
-                    <div class="card card__price">
+                    <div class="card card__price wow fadeInUp" data-wow-delay="0.6s">
                         <h3 class="card__title">Индивидуальные макеты</h3>
                         <!-- /.card__title -->
                         <img src="img/price/img6.jpg" alt="Индивидуальный" class="card__img">
@@ -509,7 +510,7 @@
                 <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
                 <input type="tel" name="field" class="input phone modal__input" id="phone-modal" placeholder="Контактный телефон">
                 <input type="email" name="email" class="input modal__input" placeholder="Электронная почта">
-                <button class="send modal__button">Оставить заявку</button>
+                <button type="submit" class="send modal__button">Оставить заявку</button>
             </form>
             <!-- /.modal-dialog__title -->
         </div>

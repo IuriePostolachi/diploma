@@ -254,6 +254,26 @@ template {
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp; }
 
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn; }
+
 /* Импорт стилей слайдера*/
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat; }
@@ -1800,8 +1820,8 @@ img {
     background-color: #fff;
     padding: 40px; }
     .modal-dialog__close {
-      top: 0;
-      right: 0;
+      top: 1px;
+      right: 3px;
       padding: 5px 10px;
       position: absolute;
       border-radius: 10px;
@@ -1916,4 +1936,54 @@ img {
 @media (max-width: 525px) {
   .kits-dialog__close {
     right: 46%; } }
+
+.thx-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.thx-block {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  width: 310px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 3%;
+  padding: 20px; }
+
+.thx__title {
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 5px; }
+
+.thx__subtitle {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 30px; }
+
+.thx-button {
+  width: 150px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  padding: 10px 27px;
+  background-color: #23bac1; }
+  .thx-button:hover {
+    background: #21b2b8;
+      background-cursor: pointer; }
+
+.thx__back {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 3.6px; }
+
+@media (max-width: 991px) {
+  .thx-button:hover {
+    background-color: #23bac1; } }
 /*# sourceMappingURL=style.css.map */
