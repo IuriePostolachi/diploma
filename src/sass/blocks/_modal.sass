@@ -24,7 +24,8 @@
 			background-color: $main-color      
 			outline: none
 			font-size: 18px
-			font-weight: 400    
+			font-weight: 400 
+			border: none   
 			&:hover				
 				background: lighten($main-color, 10%)
 				cursor: pointer	
@@ -48,3 +49,32 @@
 		&:hover			
 			background: darken($main-color, 2%)			
 			cursor: pointer
+
+@media (max-width: 992px)
+	.modal
+		&-dialog
+			&__close     
+				&:hover				
+					background-color: $main-color 
+		&__button	
+			&:hover	
+				background-color: $main-color		
+
+@media (max-width: 480px)
+	.modal
+		min-width: 310px
+		&__input		
+			width: 215px
+		&__button	
+			width: 215px
+
+		
+		 
+
+
+
+
+
+		     
+
+

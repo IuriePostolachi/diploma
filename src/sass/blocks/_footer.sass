@@ -45,6 +45,7 @@
 		font-weight: 400  
 		letter-spacing: 
 		color: $main-color
+		cursor: pointer
 		&:after
 			content: ''
 			display: block
@@ -75,12 +76,19 @@
 	.footer
 		padding-bottom: 40px
 		&__adress
-			display: none
+			position: absolute
+			left: 30%
+			margin-top: -4%
+			text-align: center
+			&-img
+				position: absolute
+				margin-left: 40%
+				margin-top: -35px
 		&__call
 			position: relative
 			margin-left: auto
 			margin-right: auto
-			margin-top: -20px
+			margin-top: 19px
 		&__phone
 			position: relative
 			margin-left: auto
@@ -89,5 +97,37 @@
 			position: relative
 			margin-left: auto
 			margin-right: auto	
+
+@media (max-width: 461px)
+	.footer
+		&__adress
+			&-img
+				margin-left: 35%
+			&-text
+				padding-right: 40px
+		&__call
+			margin-top: 38px
+
+@media (max-width: 405px)
+	.footer
+		&__adress
+			&-img
+				margin-left: 30%
+			&-text
+				padding-right: 70px
+
+@media (max-width: 340px)
+	.footer
+		&__adress
+			&-img
+				margin-left: 28%
+			&-text
+				padding-right: 75px
+		
+
+
+
+
+
 
 
