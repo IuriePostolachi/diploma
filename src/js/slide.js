@@ -4,7 +4,9 @@ $(document).ready(function() {
         slidesToScroll: 1,
         prevArrow: $('.portfolio-arrows__left'),
         nextArrow: $('.portfolio-arrows__right')
-    })
+    });
+});
+$(document).ready(function() {
     $('.clients-slider').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -39,5 +41,5 @@ $(document).ready(function() {
                 }
             }
         ]
-    })
-})
+    });
+});

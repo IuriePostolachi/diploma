@@ -1,0 +1,86 @@
+.kits
+	display: none
+	position: fixed  
+	left: 0  
+	top: 0  
+	width: 100%  
+	height: 100%  
+	background-color: rgba(#000, 0.5)
+	display: none
+	&__active
+		display: block
+	&-dialog    
+		position: relative    
+		margin: auto
+		margin-top: 100px
+		max-width: 550px   
+		&__close      
+			top: 0     
+			right: 50%      
+			padding: 5px 10px      
+			position: absolute      
+			border-radius: 10px
+			color: $white-text      
+			background-color: $main-color      
+			outline: none
+			font-size: 14px
+			font-weight: 400    
+			&:hover				
+				background: lighten($main-color, 10%)
+				cursor: pointer	
+	&-switch
+		&_buttons
+			display: block
+			margin: auto
+			width: 100%
+			text-align: center
+			padding-top: 1px	
+			& ul
+				padding: 0
+				margin-top: 51px
+				& li
+					display: inline-block
+					background-color: #1aa09f
+					box-shadow: 0px 2px 0px 0px rgb(28, 110, 109)
+					width: 140px
+					margin-top: 4px
+					text-align: center
+					&.active
+						display: inline-block
+						background-color: #1aa09f59
+						border-radius: 2%
+						box-shadow: none
+						width: 138px	
+					& a
+						display: inline-block
+						width: 100%
+						height: 100%
+						color: white
+						text-decoration: none !important
+						padding: 5px 0px
+						margin: 0
+						font-size: 16px
+	&-block
+		display: none
+		&s
+			padding-left: 5%
+		&__last
+			display: block
+		&__img
+			margin: auto
+			width: 95%
+			border-radius: 3%
+			margin-top: 13px
+
+@media (max-width: 992px)					
+  .kits
+	  &-dialog
+		  &__close
+			  &:hover
+			    background-color: $main-color      
+
+@media (max-width: 525px)
+	.kits
+		&-dialog
+			&__close
+				right: 46%      
