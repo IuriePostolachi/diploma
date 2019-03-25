@@ -782,7 +782,16 @@ img {
 
 @media (max-width: 360px) {
   .container {
-    width: 90%; } }
+    width: 90%; }
+  #username-error {
+    padding-left: 25px; }
+  #phone-hero-error, #phone-modal-error {
+    position: absolute;
+    margin-top: -15px;
+    padding-left: 25px; }
+  #email-error {
+    margin-top: -15px;
+    padding-left: 25px; } }
 
 /* Импорт стилей навигационного меню */
 .navbar {
@@ -2097,7 +2106,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none; }
+  display: none;
+  z-index: 2; }
   .modal__active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2166,7 +2176,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none; }
+  display: none;
+  z-index: 3; }
   .kits__active {
     display: block; }
   .kits-dialog {
