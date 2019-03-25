@@ -35,7 +35,7 @@ gulp.task('move-fonts', function(done) {
 // })
 
 
-gulp.task('default', gulp.parallel('minify-css', 'htmlmin', 'move-fonts', function(done) {
+gulp.task('default', gulp.parallel('minify-css', 'htmlmin', function(done) {
 
     done();
 }));

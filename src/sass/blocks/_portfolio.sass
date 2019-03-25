@@ -30,14 +30,29 @@
       justify-content: space-around 
   &-arrows
     position: relative
+    cursor: pointer
     &__left
       position: absolute
       top: -183px
       left: 0px
+      width: 30px
+      height: 40px
+      padding-top: 7px
+      padding-left: 6px
+      border-radius: 25%
+      &:hover
+        background: rgba(#000, 0.1)
     &__right
       position: absolute
       top: -183px
       right: 3px
+      width: 30px
+      height: 40px
+      padding-top: 7px
+      padding-left: 6px
+      border-radius: 25%
+      &:hover
+        background: rgba(#000, 0.1)
 .description
   margin-left: 84px
   margin-right: auto
@@ -145,7 +160,14 @@
         flex-direction: column
         justify-content: center
       &__img
-        margin: auto      
+        margin: auto 
+    &-arrows
+      &__left
+        &:hover
+          background: transparent
+      &__right
+        &:hover
+          background: transparent      
   .description
     width: 450px
     margin: auto 
@@ -175,42 +197,12 @@
           position: relative
           margin-left: 3%
           margin-right: 15%
-          width: auto        
+          width: auto  
     &__button
       margin: auto
       &:hover
-        background-color: $main-color
-    
-@media (max-width: 991px)
-  .portfolio
-    &-title
-      font-size: 34px
-    &-subtitle
-      font-size: 18px
-      padding-top: 30px
-      padding-bottom: 70px
-  .description
-    width: 450px
-    &__note, &__subtitle
-      text-align: center
-    &__details
-      display: block 
-      &__text
-        margin-left: 18%                   
-        &:nth-child(2)
-          margin-left: 14%
-        &:nth-child(3)
-          margin-left: 10%
-    &__specify
-      display: block 
-      &__text 
-        margin-left: 19%
-        &:nth-child(2)
-          margin-left: 15%
-          margin-right: 10%
-        &:nth-child(3)
-          margin-left: 0%
-          margin-right: 0%
+        background-color: $main-color      
+  
 
 @media (max-width: 650px)
   .portfolio
